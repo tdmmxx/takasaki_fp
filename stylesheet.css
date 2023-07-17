@@ -18,139 +18,102 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
+  padding: 120px 0px;
+  background-image: url(background.PNG);
   background-size: cover;
-  color: white;
-  text-align: center;
+  color:yellow;
+  text-align:center;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
   font-size: 45px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
+.top-wrapper h2 {
+  padding: 0px 10px;
 }
 
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34,49,52,0.9);
+  background-color:yellow;
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  width: 200px;
 }
 
 .header-left {
   float: left;
+  margin-top: -20px;
+  
 }
 
 .header-right {
   float: right;
-  margin-right: -25px;
 }
 
 .header-right a {
   line-height: 65px;
   padding: 0 25px;
-  color: white;
+  color: blue;
   display: block;
   float: left;
   transition: all 0.5s;
 }
 
 .header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(31, 16, 243, 0.7);
 }
 
-.lesson-wrapper {
-  height: 580px;
+.catch-wrapper {
+  height: 1000px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f7f7f7;
+  background-color: #c8dcf81d;
   text-align: center;
 }
 
 .heading {
   padding-top: 80px;
   padding-bottom: 50px;
-  color: #5f5d60;
+  color:blue;
 }
 
-.heading h2 {
-  font-weight: normal;
+.heading h1 {
+  font-weight: 900px;
 }
 
-.lesson {
+.catch {
   float: left;
   width: 25%;
 }
 
-.lesson-icon {
-  position: relative;
+.clear_box{/*2行目の回り込みの解除*/
+clear: both;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
+.fish {
+  position: relative;
+  margin: 10px;
+}
+
+.fish p {
   width: 100%;
-  color: white;
+  color:blue;
+  font-weight: 600;
 }
 
 .text-contents {
-  width: 80%;
+  width: 100%;
   display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
+  margin-top: 10px;
+  font-size: 15px;
   color: #b3aeb5;
 }
 
@@ -264,6 +227,11 @@ footer {
   .lesson-wrapper {
     height: 1700px;
   }
+
+  .message-wrapper .btn {
+    width: 100%;
+  }
+}
 
   .message-wrapper .btn {
     width: 100%;
