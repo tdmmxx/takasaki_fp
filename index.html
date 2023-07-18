@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>お魚図鑑</title>
-  <!-- ここでFont Awesomeを読み込んでください -->
+  /*フォントの読み込み
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <!-- ここにコードを書いていきましょう -->
    <header>
      <div class="container">
        <div class="header-left">
          <img class="logo" src="logo.png">
         </div>
         <div class="header-right">
-          <a href="#" class="login">ログイン</a>
+          <a href="#fishing">釣果へ</a>
+          <a href="#eco">おすすめ商品</a>
        </div>
      </div>
   </header>
@@ -30,67 +30,110 @@
 <div class="catch-wrapper">            
   <div class="container">            
     <div class="heading">            
-      <h1>これまでに釣った魚種</h1>            
-    </div>            
-  <div class="catches">            
+      <h1 id="fishing">これまでに釣った魚種</h1>            
+    </div>                       
     <div class="catch">            
       <div class="fish">            
         <img src="no1.jpg" style="width:100%">   
         <p>マダイ</p>                      
       </div>          
-    <p class="text-contents">小さなタイは釣り人の間でチャリコと呼ばれる。青色の斑点が美しい。</p>            
+    <p class="text-contents">小さなタイは釣り人の間でチャリコと呼ばれます。青色の斑点が綺麗です。</p>            
     </div>            
     <div class="catch">            
       <div class="fish">            
         <img src="no2.jpg" style="width:100%">            
         <p>アコウ（キジハタ）</p>            
       </div>        
-      <p class="text-contents">関西ではアコウと呼ばれる高級魚。地域によっては大きさにより採捕禁止の基準がある。</p>            
+      <p class="text-contents">関西ではアコウと呼ばれる高級魚。地域によっては大きさにより採捕禁止の基準があります。</p>            
     </div>            
     <div class="catch">            
   <div class="fish">            
     <img src="no3.jpg" style="width:100%">            
     <p>カサゴ（アラカブ）</p>            
   </div>            
-    <p class="text-contents">関西ではカサゴとよばれる魚。成長速度が遅く20㎝になるまで4～5年かかるといわれる。</p>            
+    <p class="text-contents">関西ではカサゴとよばれる魚。成長速度が遅く20㎝になるまで4～5年かかるといわれています。</p>            
   </div>            
   <div class="catch">            
     <div class="fish">            
       <img src="no4.jpg" style="width:100%">            
       <p>ムラソイ</p>            
     </div>            
-    <p class="text-contents">カサゴとよくにている魚。カサゴと比較すると若干黒っぽい色をしている。</p>            
+    <p class="text-contents">カサゴとよくにている魚。カサゴと比較すると若干黒っぽい色をしています。</p>            
   </div>
   <div class="catch clear_box">            
     <div class="fish">            
       <img src="no5.jpg" style="width:100%">            
       <p>イトヒキハゼ</p>            
     </div>            
-    <p class="text-contents">青色の斑点が美しいハゼの仲間。顎の力が強い。</p>            
+    <p class="text-contents">青色の斑点が美しいハゼの仲間。キス釣りの外道として釣れることがあります。</p>            
   </div>       
   <div class="catch">            
     <div class="fish">            
       <img src="no6.jpg" style="width:100%">   
       <p>サバ</p>                      
     </div>          
-  <p class="text-contents">遊泳力がすさまじい魚。群れで行動するので、数釣りを楽しむことができる。</p>            
+  <p class="text-contents">群れで行動する魚。サビキ釣りで数釣りを楽しむことができます。</p>            
   </div>            
   <div class="catch">            
     <div class="fish">            
       <img src="no7.jpg" style="width:100%">            
       <p>チヌ（クロダイ）</p>            
     </div>        
-    <p class="text-contents">釣り人の間ではではチヌと呼ばれる魚。警戒心が高く、主にカニなど甲殻類を食べるため硬いくちばしを持つ。</p>            
+    <p class="text-contents">釣り人の間ではではチヌと呼ばれる魚。警戒心が高く、主にカニなど甲殻類を食べるため硬いくちばしを持っています。</p>            
   </div>            
   <div class="catch">            
     <div class="fish">            
       <img src="no8.jpg" style="width:100%">            
       <p>アナゴ</p>            
-  </div>            
-  <p class="text-contents">夜行性の魚。体表の粘膜と血液に毒性があるため、食べる際には加熱が必要。</p>            
+    </div>            
+  <p class="text-contents">夜行性の魚。体表の粘膜と血液に毒性があるため、食べる際には加熱が必要です。</p>            
   </div>
  </div>            
-</div>                    
+</div>
+
+
+<div class="ad-wrapper">
+  <div class="container">            
+    <div class="heading">            
+      <h1 id="eco">環境に配慮した釣り具</h1>
+      <h2>環境にやさしい釣り具を使って持続可能な釣りをしよう！</h2>            
+    </div>   
+    <div class="ads">        
+      <div class="ad">            
+        <img src="ad1.jpg" style="width:100%">
+        <a href="https://www.amazon.co.jp/%E3%82%A8%E3%83%BC%E3%83%93%E3%83%BC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84-Absport-%E3%82%A8%E3%82%B3%E3%82%AA%E3%83%A2%E3%83%AA50%E5%8F%B7-%E3%83%A9%E3%82%A4%E3%83%88%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3-50233/dp/B07XQ9J8NM/ref=sr_1_1_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3EL4C7HCPA9TZ&keywords=%E3%82%A8%E3%82%B3%E3%81%8A%E3%82%82%E3%82%8A&qid=1689649530&sprefix=%E3%82%A8%E3%82%B3%E3%81%8A%E3%82%82%E3%82%8A%2Caps%2C632&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">エコオモリ</a>     
+      </div>        
+      <p class="text-contents">生物が一定以上の量の鉛を摂取すると中毒症状を引き起こします。鉄製オモリを使用して生き物を守りましょう。</p>            
+    </div> 
+    <div class="ads">        
+      <div class="ad">            
+        <img src="ad2.jpg" style="width:65%">  
+        <a href="https://www.amazon.co.jp/%E3%80%90%E3%81%BE%E3%81%A8%E3%82%81%E8%B2%B7%E3%81%84-%C3%975%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88%E3%80%91-%E3%82%A8%E3%82%B3%E3%82%AE%E3%82%A2%E7%86%9F%E6%88%90%E3%82%A2%E3%82%AF%E3%82%A2-%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9-3%E3%82%A4%E3%83%B3%E3%83%81/dp/B0C8MRS8ZY/ref=sr_1_2_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=19NOZWI131WCB&keywords=%E3%82%A8%E3%82%B3%E3%82%AE%E3%82%A2%E3%82%A2%E3%82%AF%E3%82%A2&qid=1689642368&sprefix=%E3%82%A8%E3%82%B3%E3%82%AE%E3%82%A2%E3%82%A2%E3%82%AF%E3%82%A2%2Caps%2C560&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">分解性ルアー</a>               
+      </div>        
+      <p class="text-contents">分解性素材で出来ているので水中に残っても、微生物が水と二酸化炭素に分解します。</p>            
+    </div>
+    <div class="ads">        
+      <div class="ad">            
+        <img src="ad3.jpg" style="width:53%">       
+        <a href="https://fishingmax.co.jp/fishingpost/1008300" target="_blank">ベイトバガスパック</a>      
+      </div>        
+      <p class="text-contents">竹とさとうきびの搾りかす“バガス”を使った土壌・海洋のどちらでも完全分解する釣り餌容器です。</p>            
+    </div>
+    <div class="ads">        
+      <div class="ad">            
+        <img src="ad4.jpg" style="width:110%">
+        <a href="https://jackson.jp/products/%E3%83%9D%E3%83%83%E3%82%B7%E3%83%A5" target="_blank">ポッシュ</a>          
+      </div>        
+      <p class="text-contents">ラインの切れ端などのゴミを簡単にしまうことができるアイテムです。釣り場にゴミを残さないようにしましょう。</p>            
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>Copyright © 2023 takasaki All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
