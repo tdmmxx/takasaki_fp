@@ -7,10 +7,6 @@ body {
   font-family: "Hiragino Kaku Gothic ProN";
 }
 
-a {
-  text-decoration: none;
-}
-
 .container {
   width: 100%;
   padding: 0 15px;
@@ -55,6 +51,9 @@ header {
 
 .header-right {
   float: right;
+  margin-right: -15px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .header-right a {
@@ -71,17 +70,16 @@ header {
 }
 
 .catch-wrapper {
-  height: 1000px;
+  height: 1400px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #c8dcf81d;
+  background-color: #c8dcf853;
   text-align: center;
 }
 
 .heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding: 50px 0px;
   color:blue;
 }
 
@@ -100,7 +98,7 @@ clear: both;
 
 .fish {
   position: relative;
-  margin: 10px;
+  margin: 5px;
 }
 
 .fish p {
@@ -110,130 +108,51 @@ clear: both;
 }
 
 .text-contents {
-  width: 100%;
+  width: 90%;
   display: inline-block;
   margin-top: 10px;
   font-size: 15px;
-  color: #b3aeb5;
+  color: #0000008e;
 }
 
-.heading h3 {
-  font-weight: normal;
+.ad-wrapper {
+  height: 600px;
+  padding-bottom: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f3fb100f;
+  text-align: center
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+.ads {
+  float: left;
+  width: 25%;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
+.ad {
   position: relative;
-  top: 7px;
-  box-shadow: none;
+  margin: 5px;
 }
 
-footer img {
-  width: 125px;
+
+.ad a {
+  width: 100%;
+  float: left;
+  color:blue;
+  font-weight: 600;
+  padding:10px 0px;
+}
+
+
+footer {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0px;
+  background-color: yellow;
+  text-align: center;
 }
 
 footer p {
   color: #b3aeb5;
   font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-}
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
 }
